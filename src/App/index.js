@@ -1,10 +1,12 @@
 import React, { Component } from "react";
-import "./style.css";
+import "./style.scss";
 
-class App extends Component {
-  render() {
-    return <div className="App">Hello World</div>;
-  }
-}
+const App = () => {
+  return (
+    <div className="App">
+      <h1>Dominic Cobb</h1>
+    </div>
+  );
+};
 
 export default App;
