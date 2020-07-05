@@ -2,6 +2,8 @@
 
 ### 206-489-6538
 
-### me@dominiccobb.dev
+### www.dominiccobb.dev
+
+### Email: me@dominiccobb.dev
 
 This site is created with React
