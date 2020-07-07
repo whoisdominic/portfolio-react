@@ -7,6 +7,7 @@ import Home from "./index.js";
 import MainNav from "./mainNav.js";
 import Resume from "./Resume.js";
 import Portfolio from "./Portfolio.js";
+import Contact from "./Contact.js";
 // Or Create your Own theme:
 const theme = createMuiTheme({
   palette: {
@@ -23,6 +24,11 @@ const theme = createMuiTheme({
 });
 
 const routes = [
+  {
+    path: "/contact",
+    component: Contact,
+    name: "Contact",
+  },
   {
     path: "/resume",
     component: Resume,
