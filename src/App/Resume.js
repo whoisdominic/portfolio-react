@@ -18,6 +18,13 @@ const Resume = (props) => {
         <div className="home-cont">
           <h1 className="section-title">Resume</h1>
           <span />
+          <br />
+          <br />
+          <h3>
+            Please contact me by email or phone for a copy of my official resume
+          </h3>
+          <br />
+          <h3>Thank you!</h3>
         </div>
       </div>
     </>

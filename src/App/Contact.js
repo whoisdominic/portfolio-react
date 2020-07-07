@@ -19,13 +19,13 @@ const Contact = (props) => {
           <div className="any-cont">
             <Paper elevation={3}>
               <div className="any-cont">
-                <p>Feel Free to click the icons in the top left or see below</p>
+                <p>Feel free to click the icons in the top left or see below</p>
                 <br />
                 <h2>Phone</h2>
                 <br />
                 <a href="tel:2064896538">
                   <PhoneIcon />
-                  <h3>206-489-6538</h3>
+                  <h3>1-206-489-6538</h3>
                 </a>
                 <br />
                 <h2>Email</h2>
@@ -34,6 +34,8 @@ const Contact = (props) => {
                   <EmailIcon />
                   <h3>me@dominiccobb.dev</h3>
                 </a>
+                <br />
+                <h2>LinkedIn</h2>
                 <br />
                 <a
                   href="https://www.linkedin.com/in/dominiccobb/"

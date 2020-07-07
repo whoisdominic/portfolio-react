@@ -21,6 +21,7 @@ const Portfolio = (props) => {
 
           <div className="any-cont">
             <Paper elevation={3}>
+              <br />
               <h1>Goat Ranker</h1>
               <div className="any-cont2">
                 <br />
@@ -46,6 +47,7 @@ const Portfolio = (props) => {
             </Paper>
             <br />
             <Paper elevation={3}>
+              <br />
               <h1>Turnout</h1>
               <div className="any-cont2">
                 <br />
@@ -70,6 +72,7 @@ const Portfolio = (props) => {
             </Paper>
             <br />
             <Paper elevation={3}>
+              <br />
               <h1>Uno Island</h1>
               <div className="any-cont2">
                 <br />
