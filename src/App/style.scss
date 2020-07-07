@@ -1,7 +1,87 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
 body {
   background-color: #42bcf5;
-}
-h1 {
   font-family: "Lato", sans-serif;
+}
+
+.triangle-topleft {
+  background-image: url("/images/Untitled_design.png");
+  height: 300px;
+  width: 300px;
+  z-index: 0;
+  background-repeat: no-repeat;
+}
+.triangle-topleft2 {
+  background-image: url("/images/Copy_of_Untitled.png");
+  height: 600px;
+  width: 600px;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+.nav-cont {
+  display: flex;
+  flex-direction: column;
+  min-width: 350px;
+  max-width: 350px;
+  padding-top: 5%;
+  padding-left: 80%;
+}
+.nav-head {
+  display: flex;
+  justify-content: flex-start;
+}
+.home-cont {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.tri-content {
+  margin: 5%;
+}
+.icons {
+  margin: 5%;
+  display: flex;
+  justify-content: flex-start;
+}
+span {
+  margin: 1.5%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.photo_of_me_mob {
+  margin: auto;
+
+  height: 40%;
+  width: 50%;
+  border-radius: 50%;
+  filter: grayscale(40%);
+  max-width: 350px;
+  max-height: 350px;
+  border: 5px outset #a85bff;
+}
+.any-cont {
+  width: 90%;
+  margin: auto;
+  padding: 5%;
+}
+.about-txt {
+  padding: 5%;
+}
+li {
+  list-style: none;
+}
+.center-cont-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 150px;
 }
