@@ -5,6 +5,8 @@ import { ThemeProvider } from "@material-ui/styles";
 // Components
 import Home from "./index.js";
 import MainNav from "./mainNav.js";
+import Resume from "./Resume.js";
+import Portfolio from "./Portfolio.js";
 // Or Create your Own theme:
 const theme = createMuiTheme({
   palette: {
@@ -22,19 +24,14 @@ const theme = createMuiTheme({
 
 const routes = [
   {
-    path: "/",
-    component: Home,
-    name: "Home",
+    path: "/resume",
+    component: Resume,
+    name: "Resume",
   },
   {
-    path: "/",
-    component: Home,
-    name: "Home",
-  },
-  {
-    path: "/",
-    component: Home,
-    name: "Home",
+    path: "/portfolio",
+    component: Portfolio,
+    name: "Portfolio",
   },
   {
     path: "/",

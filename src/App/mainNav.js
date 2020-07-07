@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const MainNav = () => {
+const MainNav = (props) => {
   const history = useHistory();
   const classes = useStyles();
   const matches = useMediaQuery("(min-width:600px)");

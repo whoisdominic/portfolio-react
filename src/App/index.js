@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div className="App">
       <div className="home-cont">
-        <h1>About Me</h1>
+        <h1 className="section-title">About Me</h1>
         <span />
         <img
           className="photo_of_me_mob"
@@ -59,6 +59,7 @@ const Home = () => {
                 <li>CSS</li>
                 <li>Sass</li>
                 <li>Javascript</li>
+                <li>ES6</li>
                 <li>Typescript</li>
                 <li>Node</li>
                 <li>Babbel</li>
