@@ -18,11 +18,16 @@ const Home = () => {
       <div className="home-cont">
         <h1 className="section-title">About Me</h1>
         <span />
-        <img
-          className="photo_of_me_mob"
-          src={require("../images/1FCB86D8-6A2B-422D-86D1-56372B6231D2.jpeg")}
-          alt="Dominic Cobb"
-        />
+        {matches ? (
+          <></>
+        ) : (
+          <img
+            className="photo_of_me_mob"
+            src={require("../images/1FCB86D8-6A2B-422D-86D1-56372B6231D2.jpeg")}
+            alt="Dominic Cobb"
+          />
+        )}
+
         <div className="any-cont">
           <Paper elevation={3}>
             <p className="about-txt">

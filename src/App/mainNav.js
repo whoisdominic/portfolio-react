@@ -36,9 +36,10 @@ const MainNav = (props) => {
   const contact = () => {
     history.push("/contact");
   };
+  let navdynam = matches ? "nav-head-big" : "nav-head";
   return (
     <div className="App">
-      <header className="nav-head">
+      <header className={navdynam}>
         <div className="triangle-topleft">
           <div className="tri-content">
             <h1 onClick={home}>Dominic Cobb</h1>
@@ -79,6 +80,19 @@ const MainNav = (props) => {
             </Button>
           </div>
         </div>
+        {matches ? (
+          <>
+            <div className="img-me-cont">
+              <img
+                className="photo_of_me"
+                src={require("../images/1FCB86D8-6A2B-422D-86D1-56372B6231D2.jpeg")}
+                alt="Dominic Cobb"
+              />
+            </div>
+          </>
+        ) : (
+          <></>
+        )}
       </header>
       <br />
     </div>

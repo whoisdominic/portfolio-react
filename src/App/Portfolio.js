@@ -12,6 +12,7 @@ import { createMuiTheme } from "@material-ui/core/styles";
 import { Paper } from "@material-ui/core";
 
 const Portfolio = (props) => {
+  const matches = useMediaQuery("(min-width:600px)");
   return (
     <>
       <div className="App">
