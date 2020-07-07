@@ -98,6 +98,12 @@ a {
   margin: 0;
   padding: 0;
 }
+.any-cont-mid {
+  width: 50%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
 .about-txt {
   padding: 5%;
 }
@@ -118,6 +124,16 @@ li {
   width: 90%;
   max-width: 90%;
   max-height: 100%;
+}
+.portfolio-img-large {
+  width: auto;
+  max-width: 50%;
+  max-height: 500px;
+}
+.portfolio-img-large {
+  width: auto;
+  max-width: 50%;
+  max-height: 500px;
 }
 .section-title {
   color: rgb(27, 27, 27);

@@ -13,6 +13,7 @@ import { Paper } from "@material-ui/core";
 
 const Portfolio = (props) => {
   const matches = useMediaQuery("(min-width:600px)");
+  let imageClass = matches ? "portfolio-img-large" : "portfolio-img";
   return (
     <>
       <div className="App">
@@ -39,7 +40,7 @@ const Portfolio = (props) => {
                 <br />
                 <a href="http://www.goatranker.com">
                   <img
-                    className="portfolio-img"
+                    className={imageClass}
                     src={require("../images/goatrankerscrnshot.png")}
                     alt="goat ranker"
                   />
@@ -64,7 +65,7 @@ const Portfolio = (props) => {
                 <br />
                 <a href="https://turnout-nova.netlify.app/">
                   <img
-                    className="portfolio-img"
+                    className={imageClass}
                     src={require("../images/turnoutscreenshot.png")}
                     alt="goat ranker"
                   />
@@ -91,12 +92,15 @@ const Portfolio = (props) => {
                 <br />
                 <a href="https://whoisdominic.github.io/Uno-project/">
                   <img
-                    className="portfolio-img"
+                    className={imageClass}
                     src={require("../images/unoislandscrnshot.png")}
                     alt="goat ranker"
                     domi
                   />
                 </a>
+                <br />
+                <br />
+                <br />
               </div>
             </Paper>
             <br />
@@ -104,6 +108,16 @@ const Portfolio = (props) => {
             <br />
             <Paper elevation={3}>
               <div className="center-cont-about">
+                {matches ? (
+                  <>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                  </>
+                ) : (
+                  <></>
+                )}
                 <h1>Ready to connect?</h1>
                 <div className="icons">
                   <a href="tel:2064896538">

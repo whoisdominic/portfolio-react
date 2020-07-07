@@ -21,10 +21,23 @@ const Resume = (props) => {
           <br />
           <br />
           <h3>
-            Please contact me by email or phone for a copy of my official resume
+            Please contact me by email or phone for a copy of my resume or click
+            below to download
           </h3>
           <br />
+          <br />
+          <a
+            className="delink"
+            href={require("../images/Dominicsresume.pdf")}
+            download
+          >
+            <Button variant="outlined" color="primary">
+              Download
+            </Button>
+          </a>
+          <br />
           <h3>Thank you!</h3>
+          <br />
         </div>
       </div>
     </>
