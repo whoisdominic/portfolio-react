@@ -67,7 +67,7 @@ const Home = () => {
                 <li>ES6</li>
                 <li>Typescript</li>
                 <li>Node</li>
-                <li>Babbel</li>
+                <li>Babel</li>
                 <li>Gulp</li>
                 <li>Python</li>
                 <li>Django</li>
