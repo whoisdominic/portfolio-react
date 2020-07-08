@@ -57,30 +57,40 @@ const Home = () => {
           <br />
           <Paper elevation={3}>
             <div className="about-txt">
-              <h2>Technologies</h2>
+              <h2>Languages</h2>
               <br />
               <ul>
                 <li>HTML</li>
                 <li>CSS</li>
+                <li>Python</li>
                 <li>Sass</li>
                 <li>Javascript</li>
                 <li>ES6</li>
                 <li>Typescript</li>
-                <li>Node</li>
-                <li>Babel</li>
-                <li>Gulp</li>
-                <li>Python</li>
-                <li>Django</li>
                 <li>Go</li>
-                <li>React</li>
-                <li>React Native</li>
-                <li>NextJs</li>
-                <li>Spotify Api</li>
+              </ul>
+              <br />
+              <h2>Frameworks</h2>
+              <br />
+              <li>Django</li>
+              <li>React</li>
+              <li>React Native</li>
+              <li>NextJs</li>
+              <br />
+              <h2>Api / Data</h2>
+              <br />
+              <ul>
                 <li>Graphql</li>
                 <li>Postgresql</li>
                 <li>MongoDb</li>
-                <li>Agile/Scrum</li>
-                <li>Mailchimp</li>
+                <li>REST</li>
+              </ul>
+              <br />
+              <h2>Misc</h2>
+              <ul>
+                <li>Node</li>
+                <li>Babel</li>
+                <li>Gulp</li>
               </ul>
             </div>
           </Paper>
