@@ -8,6 +8,7 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import PhoneIcon from "@material-ui/icons/Phone";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useHistory } from "react-router-dom";
+import Drift from "react-driftjs";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -95,6 +96,7 @@ const MainNav = (props) => {
         )}
       </header>
       <br />
+      <Drift appId="https://drift.me/whoisdominic " />
     </div>
   );
 };
