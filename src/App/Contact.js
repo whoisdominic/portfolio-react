@@ -13,44 +13,7 @@ import { Paper } from "@material-ui/core";
 const Contact = (props) => {
   return (
     <>
-      <div className="App">
-        <div className="home-cont">
-          <span />
-          <div className="any-cont">
-            <Paper elevation={3}>
-              <div className="any-cont">
-                <p>Feel free to click the icons in the top left or see below</p>
-                <br />
-                <h2>Phone</h2>
-                <br />
-                <a href="tel:2064896538">
-                  <PhoneIcon />
-                  <h3>1-206-489-6538</h3>
-                </a>
-                <br />
-                <h2>Email</h2>
-                <br />
-                <a href="mailto: me@dominiccobb.dev">
-                  <EmailIcon />
-                  <h3>me@dominiccobb.dev</h3>
-                </a>
-                <br />
-                <h2>LinkedIn</h2>
-                <br />
-                <a
-                  href="https://www.linkedin.com/in/dominiccobb/"
-                  target="_blank"
-                >
-                  <LinkedInIcon />
-                  <h3>Message me on LinkedIn</h3>
-                </a>
-                <br />
-                <br />
-              </div>
-            </Paper>
-          </div>
-        </div>
-      </div>
+      <div className="App"></div>
     </>
   );
 };

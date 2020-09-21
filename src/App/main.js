@@ -48,10 +48,10 @@ const routes = [
 
 export default () => {
   return (
-    <>
-      <React.Fragment>
-        <BrowserRouter>
-          <ThemeProvider theme={theme}>
+    <React.Fragment>
+      <BrowserRouter>
+        <ThemeProvider theme={theme}>
+          <div className="app-cont">
             <MainNav />
             <Switch>
               {routes.map((route) => {
@@ -64,10 +64,10 @@ export default () => {
                 );
               })}
             </Switch>
-          </ThemeProvider>
-        </BrowserRouter>
-      </React.Fragment>
-    </>
+          </div>
+        </ThemeProvider>
+      </BrowserRouter>
+    </React.Fragment>
   );
 };
 

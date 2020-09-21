@@ -14,31 +14,8 @@ import { Paper } from "@material-ui/core";
 const Resume = (props) => {
   return (
     <>
-      <div className="App">
-        <div className="home-cont">
-          <h1 className="section-title">Resume</h1>
-          <span />
-          <br />
-          <br />
-          <h3>
-            Please contact me by email or phone for a copy of my resume or click
-            below to download
-          </h3>
-          <br />
-          <br />
-          <a
-            className="delink"
-            href={require("../images/Dominicsresume.pdf")}
-            download
-          >
-            <Button variant="outlined" color="primary">
-              Download
-            </Button>
-          </a>
-          <br />
-          <h3>Thank you!</h3>
-          <br />
-        </div>
+      <div className="app-page">
+        <h1 className="page-title">Resume</h1>
       </div>
     </>
   );

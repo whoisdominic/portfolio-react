@@ -1,129 +1,90 @@
 import React, { Component } from "react";
 import "./style.scss";
-import { makeStyles } from "@material-ui/core/styles";
-import Button from "@material-ui/core/Button";
-import EmailIcon from "@material-ui/icons/Email";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import PhoneIcon from "@material-ui/icons/Phone";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-
+import MainNav from "./mainNav.js";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
-import { createMuiTheme } from "@material-ui/core/styles";
 import { Paper } from "@material-ui/core";
+import PhotoOfMe from "../images/img_20180727_151433_915.jpeg";
 
 const Home = () => {
   const matches = useMediaQuery("(min-width:600px)");
   return (
-    <div className="App">
-      <div className="home-cont">
-        <h1 className="section-title">About Me</h1>
-        <span />
-        {matches ? (
-          <></>
-        ) : (
-          <img
-            className="photo_of_me_mob"
-            src={require("../images/1FCB86D8-6A2B-422D-86D1-56372B6231D2.jpeg")}
-            alt="Dominic Cobb"
-          />
-        )}
-
-        <div className="any-cont">
-          <Paper elevation={3}>
-            <p className="about-txt">
-              I Thrive on a goal focused team hungry to deliver quality
-              products. <br />
-              <br /> My experience outside of the tech industry has allowed me
-              to cultivate an attitude of positivity in the face of adversity.
-              <br /> <br />
-              Enhancing my ability to adapt to ever-changing technologies,
-              blended with the decisiveness needed in today’s fast-paced
-              markets.
-            </p>
-          </Paper>
-          <br />
-          <Paper elevation={3}>
-            <p className="about-txt">
-              Born and raised in Bellevue Washington, a stones throw away from a
-              little company called Microsoft. <br />
-              <br /> I've always been facinated with technology and how it can
-              change the world!
-              <br /> <br />
-              Whether you need a beatiful website, a powerfull Api, or a mobile
-              app made for your business.
-              <br /> I am more than up to the task!
-            </p>
-          </Paper>
-          <br />
-          <Paper elevation={3}>
-            <div className="about-txt">
-              <h2>Languages</h2>
-              <br />
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Python</li>
-                <li>Sass</li>
-                <li>Javascript</li>
-                <li>ES6</li>
-                <li>Typescript</li>
-                <li>Go</li>
-              </ul>
-              <br />
-              <h2>Frameworks</h2>
-              <br />
-              <li>Django</li>
+    <div className="app-page">
+      <h1 className="page-title">About me</h1>
+      <div className="about-cont">
+        <p>
+          I thrive on a goal focused team hungry to deliver quality products. My
+          experience outside of the tech industry has allowed me to cultivate an
+          attitude of positivity in the face of adversity. Enhancing my ability
+          to adapt to ever-changing technologies, blended with the decisiveness
+          needed in today’s fast-paced markets.
+        </p>
+        <br />
+        <p>
+          Born and raised in Bellevue Washington, a stones throw away from a
+          little company called Microsoft. I've always been facinated with
+          technology and how it can change the world! Whether you need a
+          beatiful website, a powerfull Api, or a mobile app made for your
+          business. I am more than up to the task!
+        </p>
+      </div>
+      <div className="bottom-about">
+        <div className="skills-cont">
+          <img src={PhotoOfMe} className="img" alt="Dominic Cobb" />
+          <div className="skill">
+            <h2>Languages</h2>
+            <br />
+            <ul>
+              <li>HTML</li>
+              <li>Javascript</li>
+              <li>Typescript</li>
+              <li>Python</li>
+              <li>CSS</li>
+              <li>Sass</li>
+              <li>Kotlin</li>
+            </ul>
+          </div>
+          <div className="skill">
+            <h2>Frameworks/Libraries</h2>
+            <br />
+            <ul>
               <li>React</li>
-              <li>React Native</li>
+              <li>React-Native</li>
+              <li>Nodejs</li>
+              <li>Express</li>
               <li>NextJs</li>
-              <br />
-              <h2>Api / Data</h2>
-              <br />
-              <ul>
-                <li>Graphql</li>
-                <li>Postgresql</li>
-                <li>MongoDb</li>
-                <li>REST</li>
-              </ul>
-              <br />
-              <h2>Misc</h2>
-              <ul>
-                <li>Node</li>
-                <li>Babel</li>
-                <li>Gulp</li>
-              </ul>
-            </div>
-          </Paper>
-          <br />
-          <Paper elevation={3}>
-            <div className="center-cont-about">
-              <h1>Ready to connect?</h1>
-              <div className="icons">
-                <a href="tel:2064896538">
-                  <PhoneIcon />
-                </a>
-                <span />
-                <span />
-                <a href="mailto: me@dominiccobb.dev">
-                  <EmailIcon />
-                </a>
-                <span />
-                <span />
-                <a href="http://www.github.com/whoisdominic" target="_blank">
-                  <GitHubIcon />
-                </a>
-                <span />
-                <span />
-                <a
-                  href="https://www.linkedin.com/in/dominiccobb/"
-                  target="_blank"
-                >
-                  <LinkedInIcon />
-                </a>
-                <span />
-              </div>
-            </div>
-          </Paper>
+              <li>Expo</li>
+              <li>jQuery</li>
+              <li>Redux</li>
+              <li>Material</li>
+              <li>Reanimated</li>
+            </ul>
+          </div>
+          <div className="skill">
+            <h2>Database/API</h2>
+            <br />
+            <ul>
+              <li>MongoDb</li>
+              <li>Postgresql</li>
+              <li>GraphQL</li>
+              <li>Firebase</li>
+              <li>DynamoDB</li>
+            </ul>
+          </div>
+          <div className="skill">
+            <h2>Misc</h2>
+            <br />
+            <ul>
+              <li>GIT</li>
+              <li>Heroku</li>
+              <li>AWS</li>
+              <li>Digital Ocean</li>
+              <li>Linux</li>
+              <li>REST-API</li>
+              <li>Babel</li>
+              <li>X-code</li>
+              <li>Wordpress</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
